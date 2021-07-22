@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MarkingAssistanceSystem.jnlp">
+  <information>
+    <title>MarkingAssistanceSystem</title>
+    <vendor>quyqq</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MarkingAssistanceSystem.jar" size="25030" download="eager" />
+    <jar href="lib\derby.jar" size="3232770" download="eager" />
+    <jar href="lib\derbyclient.jar" size="588394" download="eager" />
+    <jar href="lib\derbynet.jar" size="272626" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MarkingAssistanceSystem" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="markingAssistanceSystem.mainSystem"  name="MarkingAssistanceSystem" />
+  <update check="always"/>
+</jnlp>

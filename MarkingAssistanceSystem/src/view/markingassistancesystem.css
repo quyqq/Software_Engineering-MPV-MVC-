@@ -1,0 +1,48 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.button {
+    -fx-background-color: #10A296;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+    -fx-border-color: white;
+    -fx-border-width: 0.1;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+
+}
+.button:hover {
+    -fx-background-color: #EF6060;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14;
+}
+.button:pressed {
+    -fx-background-color: #9F4040;
+
+}
+.label{/*set colour for label only*/
+    -fx-text-fill: #0C644E;
+}
+.text-field 
+{
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+}
+.combo-box{/*for all combobox*/
+    -fx-font-size: 13;
+    -fx-font-weight: bold;
+    -fx-background-color: #0C644E;
+
+}
+.combo-box > .list-cell/*for all combobox dropdown list*/
+{
+    -fx-text-fill: white;
+}
+#mainBody
+{
+    -fx-background-color: #D5E8E0;
+}

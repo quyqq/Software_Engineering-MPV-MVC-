@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="mainBody" prefHeight="824.0" prefWidth="704.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.MarkingAssistanceSystemController">
+    <stylesheets>
+        <URL value="@markingassistancesystem.css" />
+    </stylesheets>
+   <children>
+      <Separator layoutX="13.0" layoutY="164.0" prefHeight="2.0" prefWidth="663.0" />
+      <Button fx:id="btnNext" layoutX="553.0" layoutY="7.0" mnemonicParsing="false" onAction="#actionNext" prefHeight="40.0" prefWidth="100.0" text="Next" />
+      <Button fx:id="btnPrevious" layoutX="64.0" layoutY="7.0" mnemonicParsing="false" onAction="#actionPrevious" prefHeight="40.0" prefWidth="100.0" text="Previous" />
+      <Label fx:id="labelCurrentStudentStage" layoutX="269.0" layoutY="55.0" />
+      <Label layoutX="21.0" layoutY="147.0" text="Student details:" />
+      <TextField fx:id="textStudentID" disable="true" layoutX="158.0" layoutY="195.0" />
+      <TextField fx:id="textAssignment1" disable="true" layoutX="444.0" layoutY="195.0" />
+      <TextField fx:id="textExam" disable="true" layoutX="158.0" layoutY="227.0" />
+      <TextField fx:id="textAssignment2" disable="true" layoutX="444.0" layoutY="227.0" />
+      <TextField fx:id="textTotal" disable="true" layoutX="158.0" layoutY="264.0" />
+      <TextField fx:id="textGrade" disable="true" layoutX="444.0" layoutY="264.0" />
+      <Label layoutX="76.0" layoutY="199.0" text="Student ID:" />
+      <Label layoutX="358.0" layoutY="199.0" text="Assignment 1:" />
+      <Label layoutX="358.0" layoutY="231.0" text="Assignment 2:" />
+      <Label layoutX="76.0" layoutY="231.0" text="Exam:" />
+      <Label layoutX="74.0" layoutY="268.0" text="Total:" />
+      <Label layoutX="358.0" layoutY="268.0" text="Grade:" />
+      <Separator layoutX="15.0" layoutY="351.0" prefHeight="2.0" prefWidth="663.0" />
+      <Button fx:id="btnCalculateOneStudent" layoutX="48.0" layoutY="363.0" mnemonicParsing="false" onAction="#actionCalculateOneStudent" prefHeight="30.0" prefWidth="290.0" text="Caculate Grade For The Current Student" />
+      <Button fx:id="btnBoderlineCasesTolaracne" layoutX="361.0" layoutY="415.0" mnemonicParsing="false" onAction="#actionFindBoderlineCasesTolarance" prefHeight="30.0" prefWidth="290.0" text="Find Borderline Cases (Tolerance)" />
+      <TextField fx:id="textSearch" layoutX="154.0" layoutY="111.0" prefHeight="29.0" prefWidth="361.0" />
+      <Separator layoutX="13.0" layoutY="90.0" prefHeight="2.0" prefWidth="663.0" />
+      <Button fx:id="btnSearchStudent" layoutX="529.0" layoutY="104.0" mnemonicParsing="false" onAction="#actionSearch" prefHeight="40.0" prefWidth="130.0" text="Search Student" />
+      <Label layoutX="76.0" layoutY="115.0" text="Student ID:" />
+      <Button fx:id="btnCalculateAllStudents" layoutX="361.0" layoutY="363.0" mnemonicParsing="false" onAction="#actionCalculateAllStudents" prefHeight="30.0" prefWidth="290.0" text="Caculate Grade For All Students" />
+      <Button fx:id="btnUpdaeMark" layoutX="48.0" layoutY="308.0" mnemonicParsing="false" onAction="#actionUpdateMarks" prefHeight="29.0" prefWidth="290.0" text="Update Studentś Marks" />
+      <TextArea fx:id="textAreaResult" editable="false" layoutX="45.0" layoutY="623.0" prefHeight="182.0" prefWidth="632.0" />
+      <Label layoutX="47.0" layoutY="605.0" text="Result:" />
+      <Button fx:id="btnInsertNewStudent" layoutX="361.0" layoutY="308.0" mnemonicParsing="false" onAction="#actionInsertNewStudent" prefHeight="29.0" prefWidth="173.0" text="Insert New Student" />
+      <Label layoutX="60.0" layoutY="422.0" text="Tolerance :" />
+      <Label layoutX="60.0" layoutY="468.0" text="Range From:" />
+      <TextField fx:id="textTelerance" layoutX="159.0" layoutY="416.0" prefHeight="29.0" prefWidth="189.0" />
+      <Separator layoutX="21.0" layoutY="407.0" prefHeight="2.0" prefWidth="663.0" />
+      <Button fx:id="btnBrowse" layoutX="295.0" layoutY="7.0" mnemonicParsing="false" onAction="#actionBrowse" prefHeight="40.0" prefWidth="100.0" text="Browse" />
+      <Button fx:id="btnCancelInsert" disable="true" layoutX="549.0" layoutY="308.0" mnemonicParsing="false" onAction="#actionCancel" prefHeight="29.0" prefWidth="100.0" text="Cancel" />
+      <Button fx:id="btnBorderlineCasesRange" layoutX="361.0" layoutY="461.0" mnemonicParsing="false" onAction="#actionFindborderlineCasesRange" prefHeight="30.0" prefWidth="290.0" text="Find Borderline Cases (Range)" />
+      <TextField fx:id="txtFromTotal" layoutX="155.0" layoutY="462.0" prefHeight="29.0" prefWidth="75.0" />
+      <Label layoutX="236.0" layoutY="468.0" text="To:" />
+      <TextField fx:id="txtToTotal" layoutX="268.0" layoutY="462.0" prefHeight="29.0" prefWidth="75.0" />
+      <ComboBox fx:id="comboboxGrade" layoutX="159.0" layoutY="507.0" prefHeight="29.0" prefWidth="189.0" />
+      <Label layoutX="57.0" layoutY="513.0" text="Grade:" />
+      <Button fx:id="btnFindStudentWithGrade" layoutX="361.0" layoutY="506.0" mnemonicParsing="false" onAction="#actionFindStudentWithGivenGrade" prefHeight="30.0" prefWidth="290.0" text="Find Students With Given Grade" />
+      <TextField fx:id="textResultFindingStudentGivenGrade" disable="true" layoutX="46.0" layoutY="562.0" prefHeight="29.0" prefWidth="611.0" />
+      <Button fx:id="btnPreviousGVGrade" layoutX="15.0" layoutY="562.0" mnemonicParsing="false" onAction="#actionbtnPreviousGVGrade" text="&lt;" />
+      <Button fx:id="btnNextGVGrade" layoutX="663.0" layoutY="562.0" mnemonicParsing="false" onAction="#actionbtnNextGVGrade" text="&gt;" />
+      <Label fx:id="labelFIndByGrade" layoutX="273.0" layoutY="545.0" text="Find Students With Given Grade Result" />
+   </children>
+</AnchorPane>
