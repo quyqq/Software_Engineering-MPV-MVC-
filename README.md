@@ -1,2 +1,5 @@
-# Software_Engineering-MPV-MVC-
-Please read readme file
+Language: Java
+
+Study Case:
+
+Implement MPV/MVC framework to develop Marking Assistance System
